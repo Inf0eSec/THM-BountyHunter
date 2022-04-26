@@ -4,7 +4,9 @@ Deploy that machine!
 
 Find open ports on the machine
 
-A. 21, 22, 80
+          ~#nmap -sC [ip address] > scan.txt
+
+A. 21, 22, 80 
 
 
 Who wrote the task list? 
@@ -12,7 +14,7 @@ Who wrote the task list?
 It sounds like we are looking for a file of some sorts.  A good place to start would be FTP. From the command line I logged into their FTP server as **anonymous** and had a look around. I found 2 files of interest which could provide details to use hydra.
 
 
-     ~#ftp [ip address] 21
+          ~#ftp [ip address] 21
  
 A. lin
 
@@ -35,3 +37,6 @@ user.txt
 
 
 root.txt
+
+
+              ~#tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
