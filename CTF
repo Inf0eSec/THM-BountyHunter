@@ -9,8 +9,12 @@ A. 21, 22, 80
 
 Who wrote the task list? 
 
+It sounds like we are looking for a file of some sorts.  A good place to start would be FTP. From the command line I logged into their FTP server as **anonymous** and had a look around.
 
 
+    ~#ftp [ip address] 21
+ 
+A. lin
 
 What service can you bruteforce with the text file found?
 
